@@ -54,6 +54,9 @@
           </v-card-text>
         </v-card>
       </v-col>
+      <v-col cols="12">
+            <div :is="`home-${menu.title}`" />
+          </v-col>
         </v-row>
       </v-container>
     </v-sheet>

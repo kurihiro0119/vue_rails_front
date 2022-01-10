@@ -48,7 +48,7 @@ export default {
 
   publicRuntimeConfig: {
     appName: process.env.APP_NAME // 追加
-  },
+},
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
@@ -65,7 +65,8 @@ export default {
           success: '44D69E',
           warning: 'FEB65E',
           error: 'FB8678',
-          background: 'f6f6f4'
+          background: 'f6f6f4',
+          appblue: '1867C0'
         }
       }
     }
