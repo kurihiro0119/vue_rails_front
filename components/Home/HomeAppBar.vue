@@ -29,8 +29,8 @@
         {{ $t(`menus.${menu.title}`) }}
       </v-btn>
     </v-toolbar-items>
-    <app-signup-button></app-signup-button>
-    <app-login-button></app-login-button>
+    <before-login-signup-button></before-login-signup-button>
+    <before-login-button></before-login-button>
     <v-menu
       bottom
       nudge-left="110"
@@ -62,9 +62,9 @@
 </template>
 
 <script>
-import AppLoginButton from '../App/AppLoginButton.vue'
+import AppLoginButton from '../BeforeLogin/BeforeLoginButton.vue'
 import AppLogo from '../App/AppLogo.vue'
-import AppSignupButton from '../App/AppSignupButton.vue'
+import AppSignupButton from '../BeforeLogin/BeforeLoginSignupButton.vue'
 import AppTitle from '../App/AppTitle.vue'
 export default {
   props:{
