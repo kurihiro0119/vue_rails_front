@@ -7,7 +7,7 @@
   >
     <v-list>
       <template
-        v-if="isBreakpoint"
+        v-if="isMobileBreakpointLessThan"
       >
         <v-list-item
           @click="$emit('update:drawer', false)"
@@ -57,7 +57,7 @@ export default {
   },
   data() {
     return {
-      mobileBreakpoint: 960,
+      isMobileBreakpointLessThan: 960,
       navMenus: [
         { name: 'project-id-dashboard', icon: 'mdi-view-dashboard' },
         { name: 'project-id-layouts', icon: 'mdi-view-compact' },
